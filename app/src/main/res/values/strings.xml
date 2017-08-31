@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GestureLock</string>
+
+    <string name="gesture_setting_tip">请至少连接4个点</string>
+    <string name="gesture_setting_tip_confirm">再次绘制图案进行确认</string>
+    <string name="gesture_setting_reset_def">设置手势密码，防止他人未经授权查看</string>
+    <string name="gesture_setting_reset">重新绘制</string>
+
+    <string name="gesture_verify_forgot">忘记手势密码?</string>
+    <string name="gesture_verify_login">其他账号登录</string>
+</resources>

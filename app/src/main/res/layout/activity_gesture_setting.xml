@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f8f8f8">
+
+    <LinearLayout
+        android:id="@+id/ll_gesture_setting_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fl_gesture_setting_container"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.alley.lock.widget.GestureIndicator
+            android:id="@+id/LockIndicator_gesture_setting_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_gesture_setting_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/gesture_setting_tip"
+            android:textColor="#333333"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_gesture_setting_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_gesture_setting_reset"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_gesture_setting_reset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:text="@string/gesture_setting_reset_def"
+        android:textColor="#999999"
+        android:textSize="16sp"/>
+
+</RelativeLayout>
